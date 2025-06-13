@@ -1,0 +1,42 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run linter
+        run: pnpm --filter "./packages/*" --filter "./examples/*" lint
+
+      - name: Run unit tests
+        run: pnpm --filter "./packages/*" --filter "./examples/*" test:unit:ci
+
+      - name: Build
+        run: pnpm --filter "./packages/*" --filter "./examples/*" build
+
+      - name: Run e2e tests
+        run: pnpm --filter "./packages/*" --filter "./examples/*" test:e2e:ci
+
+      - name: Publish packages (multi-semantic-release)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm exec multi-semantic-release --ignore-packages='examples/**' --deps.bump=override --deps.prefix='^'

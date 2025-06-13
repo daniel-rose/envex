@@ -1,0 +1,34 @@
+name: Pull Request
+on:
+  pull_request
+
+jobs:
+  build-and-test:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run linter
+        run: pnpm --filter "./packages/*" --filter "./examples/*" lint
+
+      - name: Run unit tests
+        run: pnpm --filter "./packages/*" --filter "./examples/*" test:unit:ci
+
+      - name: Build
+        run: pnpm --filter "./packages/*" --filter "./examples/*" build
+
+      - name: Run e2e tests
+        run: pnpm --filter "./packages/*" --filter "./examples/*" test:e2e:ci
