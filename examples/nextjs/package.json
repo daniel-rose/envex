@@ -9,7 +9,8 @@
     "standalone": "node .next/standalone/examples/nextjs/server.js",
     "lint": "next lint",
     "test:e2e": "playwright test --config playwright.config.ts --ui",
-    "test:e2e:ci": "playwright test --config playwright.config.ts"
+    "test:e2e:ci:pre": "playwright install",
+    "test:e2e:ci": "pnpm run test:e2e:ci:pre && playwright test --config playwright.config.ts"
   },
   "dependencies": {
     "react": "^19.0.0",

@@ -6,7 +6,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "test:unit": "vitest",
-    "test:unit:ci": "vitest --run --coverage --outputFile=coverage/junit.xml --reporter=junit --browser.headless"
+    "test:unit:ci:pre": "playwright install",
+    "test:unit:ci": "pnpm run test:unit:ci:pre && vitest --run --coverage --outputFile=coverage/junit.xml --reporter=junit --browser.headless"
   },
   "files": [
     "dist"

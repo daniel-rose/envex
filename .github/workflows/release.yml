@@ -25,9 +25,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Install playwright browsers
-        run: pnpm dlx playwright install --with-deps
-
       - name: Run linter
         run: pnpm --filter "./packages/*" --filter "./examples/*" lint
 
