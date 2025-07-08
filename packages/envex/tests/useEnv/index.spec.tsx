@@ -18,7 +18,7 @@ test('Try to render a component which uses "useEnv" without EnvexProvider as par
 
   try {
     render(
-      <EnvexProvider>
+      <EnvexProvider initialEnv={{}}>
         <EnvList />
       </EnvexProvider>
     )
