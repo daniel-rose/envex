@@ -3,12 +3,13 @@
 import { useEffect, useState } from 'react'
 import EnvexContext from '../EnvexContext'
 import { EnvexScriptIsMissingError } from '../errors.ts'
+import filterPublicEnv from '../filterPublicEnv'
 import type { Env } from '../types.ts'
 import type { EnvexProviderPropsInterface } from './types.ts'
 
 const EnvexProvider = (props: EnvexProviderPropsInterface) => {
-  const { children } = props
-  const [env, setEnv] = useState<Env>({})
+  const { initialEnv, children } = props
+  const [env, setEnv] = useState<Env>(filterPublicEnv(initialEnv))
 
   useEffect(() => {
     if (!window.ENV || typeof window.ENV !== 'object') {

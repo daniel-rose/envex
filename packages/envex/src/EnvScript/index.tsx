@@ -1,19 +1,12 @@
 import Script from 'next/script'
 import { connection } from 'next/server'
+import filterPublicEnv from '../filterPublicEnv'
 import type { Env } from '../types.ts'
 
 const EnvScript = async () => {
   await connection()
 
-  const env: Env = {}
-
-  for (const name of Object.keys(process.env)) {
-    if (!name.startsWith('NEXT_PUBLIC_')) {
-      continue
-    }
-
-    env[name] = process.env[name]
-  }
+  const env: Env = filterPublicEnv(process.env)
 
   const innerHTML = {
     __html: `window.ENV = ${JSON.stringify(env)}`,

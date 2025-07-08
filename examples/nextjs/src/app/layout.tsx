@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <EnvScript />
-        <EnvexProvider>
+        <EnvexProvider initialEnv={{}}>
           {children}
         </EnvexProvider>
       </body>
