@@ -12,6 +12,7 @@ export default defineConfig({
       entry: {
         index: 'src/index.ts',
         script: 'src/script.ts',
+        server: 'src/server.ts',
         'dev-tools': 'src/dev-tools.ts',
       },
     },

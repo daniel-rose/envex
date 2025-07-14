@@ -1,0 +1,1 @@
+export const PUBLIC_ENV_PREFIX = 'NEXT_PUBLIC_'

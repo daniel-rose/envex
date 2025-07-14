@@ -1,12 +1,8 @@
 import Script from 'next/script'
-import { connection } from 'next/server'
-import filterPublicEnv from '../filterPublicEnv'
-import type { Env } from '../types.ts'
+import getPublicEnv from '../getPublicEnv'
 
 const EnvScript = async () => {
-  await connection()
-
-  const env: Env = filterPublicEnv(process.env)
+  const env = await getPublicEnv()
 
   const innerHTML = {
     __html: `window.ENV = ${JSON.stringify(env)}`,
