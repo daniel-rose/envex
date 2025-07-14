@@ -25,7 +25,13 @@
       "types": "./dist/script.d.ts",
       "require": "./dist/script.cjs",
       "import": "./dist/script.js"
-    },"./dev-tools": {
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "require": "./dist/server.cjs",
+      "import": "./dist/server.js"
+    },
+    "./dev-tools": {
       "types": "./dist/dev-tools.d.ts",
       "require": "./dist/dev-tools.cjs",
       "import": "./dist/dev-tools.js"

@@ -4,13 +4,17 @@ import {fileURLToPath} from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const resolveAlias = {
-    "@daniel-rose/envex/hooks": path.resolve(
+    "@daniel-rose/envex/scripts": path.resolve(
         __dirname,
-        '../../packages/envex/src/hooks.ts'
+        '../../packages/envex/src/scripts.ts'
     ),
-    "@daniel-rose/envex/components": path.resolve(
+    "@daniel-rose/envex/server": path.resolve(
         __dirname,
-        '../../packages/envex/src/components.ts'
+        '../../packages/envex/src/server.ts'
+    ),
+    "@daniel-rose/envex/dev-tools": path.resolve(
+        __dirname,
+        '../../packages/envex/src/dev-tools.ts'
     ),
     "@daniel-rose/envex": path.resolve(
         __dirname,
