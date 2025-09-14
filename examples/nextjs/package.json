@@ -13,20 +13,20 @@
     "test:e2e:ci": "pnpm run test:e2e:ci:pre && playwright test --config playwright.config.ts"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.3",
-    "@daniel-rose/envex": "^1.0.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "next": "^15.5.3",
+    "@daniel-rose/envex": "^1.2.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@playwright/test": "^1.53.0",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@eslint/eslintrc": "^3.3.1",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3",
-    "playwright": "^1.53.0",
+    "eslint-config-next": "^15.5.3",
+    "playwright": "^1.55.0",
     "typescript": "^5"
   }
 }
