@@ -1,4 +1,4 @@
-# Envex
+# envex
 
 > Runtime environment variables for Next.js
 
@@ -69,7 +69,7 @@ import { useEnv } from '@daniel-rose/envex'
 
 export function Example() {
     const env = useEnv()
-    return <div>{env.NEXT_PUBLIC_API_URL}</div>
+    return <div>{env['NEXT_PUBLIC_API_URL']}</div>
 }
 ```
 
@@ -98,7 +98,7 @@ See examples/nextjs for a full integration.
 
 ## License
 
-MIT © Daniel Rose
+MIT &copy; Daniel Rose
 
 Links
 
