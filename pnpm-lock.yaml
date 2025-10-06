@@ -68,35 +68,35 @@ importers:
     dependencies:
       next:
         specifier: ^15
-        version: 15.3.3(@babel/core@7.28.4)(@playwright/test@1.55.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 15.3.3(@babel/core@7.28.4)(@playwright/test@1.55.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react:
         specifier: ^19
-        version: 19.1.0
+        version: 19.1.1
       react-dom:
         specifier: ^19
-        version: 19.1.0(react@19.1.0)
+        version: 19.1.1(react@19.1.1)
     devDependencies:
       '@eslint/js':
         specifier: ^9.35.0
         version: 9.35.0
       '@semantic-release/changelog':
         specifier: ^6.0.3
-        version: 6.0.3(semantic-release@24.2.8(typescript@5.8.3))
+        version: 6.0.3(semantic-release@24.2.9(typescript@5.8.3))
       '@semantic-release/commit-analyzer':
         specifier: ^13.0.1
-        version: 13.0.1(semantic-release@24.2.8(typescript@5.8.3))
+        version: 13.0.1(semantic-release@24.2.9(typescript@5.8.3))
       '@semantic-release/git':
         specifier: ^10.0.1
-        version: 10.0.1(semantic-release@24.2.8(typescript@5.8.3))
+        version: 10.0.1(semantic-release@24.2.9(typescript@5.8.3))
       '@semantic-release/github':
         specifier: ^11.0.6
-        version: 11.0.6(semantic-release@24.2.8(typescript@5.8.3))
+        version: 11.0.6(semantic-release@24.2.9(typescript@5.8.3))
       '@semantic-release/npm':
         specifier: ^12.0.2
-        version: 12.0.2(semantic-release@24.2.8(typescript@5.8.3))
+        version: 12.0.2(semantic-release@24.2.9(typescript@5.8.3))
       '@semantic-release/release-notes-generator':
         specifier: ^14.1.0
-        version: 14.1.0(semantic-release@24.2.8(typescript@5.8.3))
+        version: 14.1.0(semantic-release@24.2.9(typescript@5.8.3))
       '@types/node':
         specifier: ^24.3.1
         version: 24.3.3
@@ -131,8 +131,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0(eslint@9.35.0)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.20
-        version: 0.4.20(eslint@9.35.0)
+        specifier: ^0.4.23
+        version: 0.4.23(eslint@9.35.0)
       globals:
         specifier: ^16.4.0
         version: 16.4.0
@@ -168,7 +168,7 @@ importers:
         version: 3.2.4(@types/node@24.3.3)(@vitest/browser@3.2.4)
       vitest-browser-react:
         specifier: ^1.0.1
-        version: 1.0.1(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(@vitest/browser@3.2.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vitest@3.2.4)
+        version: 1.0.1(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(@vitest/browser@3.2.4)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vitest@3.2.4)
 
 packages:
 
@@ -2050,6 +2050,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   deep-eql@5.0.2:
     resolution: {integrity: sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==}
     engines: {node: '>=6'}
@@ -2131,6 +2140,10 @@ packages:
 
   env-ci@11.1.1:
     resolution: {integrity: sha512-mT3ks8F0kwpo7SYNds6nWj0PaRh+qJxIeBVBXAKTN9hphAzZv7s0QAZQbqnB1fAv/r4pJUGE15BV9UrS31FP2w==}
+    engines: {node: ^18.17 || >=20.6.1}
+
+  env-ci@11.2.0:
+    resolution: {integrity: sha512-D5kWfzkmaOQDioPmiviWAVtKmpPT4/iJmMVQxWxMPJTFyTkdc5JQUfc5iXEeWxcOdsYTKSAiA/Age4NUOqKsRA==}
     engines: {node: ^18.17 || >=20.6.1}
 
   env-paths@2.2.1:
@@ -2288,8 +2301,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
-  eslint-plugin-react-refresh@0.4.20:
-    resolution: {integrity: sha512-XpbHQ2q5gUF8BGOX4dHe+71qoirYMhApEPZ7sfhF/dNnOF1UXnCMGZf79SFTBO7Bz5YEIT4TMieSlJBWhP9WBA==}
+  eslint-plugin-react-refresh@0.4.23:
+    resolution: {integrity: sha512-G4j+rv0NmbIR45kni5xJOrYvCtyD3/7LjpVH8MPPcudXDcNu8gv+4ATTDXTtbRR8rTCM5HxECvCSsRmxKnWDsA==}
     peerDependencies:
       eslint: '>=8.40'
 
@@ -3543,11 +3556,6 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-dom@19.1.0:
-    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
-    peerDependencies:
-      react: ^19.1.0
-
   react-dom@19.1.1:
     resolution: {integrity: sha512-Dlq/5LAZgF0Gaz6yiqZCf6VCcZs1ghAJyrsu84Q/GT0gV+mCxbfmKNoGRKBYMJ8IEdGPqu49YWXD02GCknEDkw==}
     peerDependencies:
@@ -3561,10 +3569,6 @@ packages:
 
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
-    engines: {node: '>=0.10.0'}
-
-  react@19.1.0:
-    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
 
   react@19.1.1:
@@ -3668,9 +3672,19 @@ packages:
     engines: {node: '>=20.8.1'}
     hasBin: true
 
+  semantic-release@24.2.9:
+    resolution: {integrity: sha512-phCkJ6pjDi9ANdhuF5ElS10GGdAKY6R1Pvt9lT3SFhOwM4T7QZE7MLpBDbNruUx/Q3gFD92/UOFringGipRqZA==}
+    engines: {node: '>=20.8.1'}
+    hasBin: true
+
   semver-diff@4.0.0:
     resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
     engines: {node: '>=12'}
+
+  semver-diff@5.0.0:
+    resolution: {integrity: sha512-0HbGtOm+S7T6NGQ/pxJSJipJvc4DK3FcRVMRkhsIwJDJ4Jcz5DQC1cPPzB5GhzyHjwttW878HaWQq46CkL3cqg==}
+    engines: {node: '>=12'}
+    deprecated: Deprecated as the semver package now supports this built-in.
 
   semver-regex@4.0.5:
     resolution: {integrity: sha512-hunMQrEy1T6Jr2uEVjrAIqjwWcQTgOAcIM52C8MY1EZSD3DDNft04XzvYKPqjED65bNVVko0YI38nYeEHCX3yw==}
@@ -5181,13 +5195,13 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/changelog@6.0.3(semantic-release@24.2.8(typescript@5.8.3))':
+  '@semantic-release/changelog@6.0.3(semantic-release@24.2.9(typescript@5.8.3))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
       fs-extra: 11.3.0
       lodash: 4.17.21
-      semantic-release: 24.2.8(typescript@5.8.3)
+      semantic-release: 24.2.9(typescript@5.8.3)
 
   '@semantic-release/commit-analyzer@13.0.1(semantic-release@24.2.8(typescript@5.8.3))':
     dependencies:
@@ -5203,11 +5217,25 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@semantic-release/commit-analyzer@13.0.1(semantic-release@24.2.9(typescript@5.8.3))':
+    dependencies:
+      conventional-changelog-angular: 8.0.0
+      conventional-changelog-writer: 8.1.0
+      conventional-commits-filter: 5.0.0
+      conventional-commits-parser: 6.2.0
+      debug: 4.4.1
+      import-from-esm: 2.0.0
+      lodash-es: 4.17.21
+      micromatch: 4.0.8
+      semantic-release: 24.2.9(typescript@5.8.3)
+    transitivePeerDependencies:
+      - supports-color
+
   '@semantic-release/error@3.0.0': {}
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/git@10.0.1(semantic-release@24.2.8(typescript@5.8.3))':
+  '@semantic-release/git@10.0.1(semantic-release@24.2.9(typescript@5.8.3))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
@@ -5217,7 +5245,7 @@ snapshots:
       lodash: 4.17.21
       micromatch: 4.0.8
       p-reduce: 2.1.0
-      semantic-release: 24.2.8(typescript@5.8.3)
+      semantic-release: 24.2.9(typescript@5.8.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -5243,6 +5271,28 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@semantic-release/github@11.0.6(semantic-release@24.2.9(typescript@5.8.3))':
+    dependencies:
+      '@octokit/core': 7.0.2
+      '@octokit/plugin-paginate-rest': 13.0.1(@octokit/core@7.0.2)
+      '@octokit/plugin-retry': 8.0.1(@octokit/core@7.0.2)
+      '@octokit/plugin-throttling': 11.0.1(@octokit/core@7.0.2)
+      '@semantic-release/error': 4.0.0
+      aggregate-error: 5.0.0
+      debug: 4.4.1
+      dir-glob: 3.0.1
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.6
+      issue-parser: 7.0.1
+      lodash-es: 4.17.21
+      mime: 4.0.7
+      p-filter: 4.1.0
+      semantic-release: 24.2.9(typescript@5.8.3)
+      tinyglobby: 0.2.14
+      url-join: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@semantic-release/npm@12.0.2(semantic-release@24.2.8(typescript@5.8.3))':
     dependencies:
       '@semantic-release/error': 4.0.0
@@ -5260,6 +5310,23 @@ snapshots:
       semver: 7.7.2
       tempy: 3.1.0
 
+  '@semantic-release/npm@12.0.2(semantic-release@24.2.9(typescript@5.8.3))':
+    dependencies:
+      '@semantic-release/error': 4.0.0
+      aggregate-error: 5.0.0
+      execa: 9.6.0
+      fs-extra: 11.3.0
+      lodash-es: 4.17.21
+      nerf-dart: 1.0.0
+      normalize-url: 8.0.2
+      npm: 10.9.3
+      rc: 1.2.8
+      read-pkg: 9.0.1
+      registry-auth-token: 5.1.0
+      semantic-release: 24.2.9(typescript@5.8.3)
+      semver: 7.7.2
+      tempy: 3.1.0
+
   '@semantic-release/release-notes-generator@14.1.0(semantic-release@24.2.8(typescript@5.8.3))':
     dependencies:
       conventional-changelog-angular: 8.0.0
@@ -5273,6 +5340,22 @@ snapshots:
       lodash-es: 4.17.21
       read-package-up: 11.0.0
       semantic-release: 24.2.8(typescript@5.8.3)
+    transitivePeerDependencies:
+      - supports-color
+
+  '@semantic-release/release-notes-generator@14.1.0(semantic-release@24.2.9(typescript@5.8.3))':
+    dependencies:
+      conventional-changelog-angular: 8.0.0
+      conventional-changelog-writer: 8.1.0
+      conventional-commits-filter: 5.0.0
+      conventional-commits-parser: 6.2.0
+      debug: 4.4.1
+      get-stream: 7.0.1
+      import-from-esm: 2.0.0
+      into-stream: 7.0.0
+      lodash-es: 4.17.21
+      read-package-up: 11.0.0
+      semantic-release: 24.2.9(typescript@5.8.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -6209,6 +6292,10 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
+  debug@4.4.3:
+    dependencies:
+      ms: 2.1.3
+
   deep-eql@5.0.2: {}
 
   deep-extend@0.6.0: {}
@@ -6275,6 +6362,11 @@ snapshots:
   entities@4.5.0: {}
 
   env-ci@11.1.1:
+    dependencies:
+      execa: 8.0.1
+      java-properties: 1.0.2
+
+  env-ci@11.2.0:
     dependencies:
       execa: 8.0.1
       java-properties: 1.0.2
@@ -6549,7 +6641,7 @@ snapshots:
     dependencies:
       eslint: 9.35.0
 
-  eslint-plugin-react-refresh@0.4.20(eslint@9.35.0):
+  eslint-plugin-react-refresh@0.4.23(eslint@9.35.0):
     dependencies:
       eslint: 9.35.0
 
@@ -7444,7 +7536,7 @@ snapshots:
 
   nerf-dart@1.0.0: {}
 
-  next@15.3.3(@babel/core@7.28.4)(@playwright/test@1.55.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  next@15.3.3(@babel/core@7.28.4)(@playwright/test@1.55.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       '@next/env': 15.3.3
       '@swc/counter': 0.1.3
@@ -7452,9 +7544,9 @@ snapshots:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001721
       postcss: 8.4.31
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
-      styled-jsx: 5.1.6(@babel/core@7.28.4)(react@19.1.0)
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
+      styled-jsx: 5.1.6(@babel/core@7.28.4)(react@19.1.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.3.3
       '@next/swc-darwin-x64': 15.3.3
@@ -7478,7 +7570,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
-      styled-jsx: 5.1.6(react@19.1.1)
+      styled-jsx: 5.1.6(@babel/core@7.28.4)(react@19.1.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.5.3
       '@next/swc-darwin-x64': 15.5.3
@@ -7775,11 +7867,6 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-dom@19.1.0(react@19.1.0):
-    dependencies:
-      react: 19.1.0
-      scheduler: 0.26.0
-
   react-dom@19.1.1(react@19.1.1):
     dependencies:
       react: 19.1.1
@@ -7790,8 +7877,6 @@ snapshots:
   react-is@17.0.2: {}
 
   react-refresh@0.17.0: {}
-
-  react@19.1.0: {}
 
   react@19.1.1: {}
 
@@ -7965,7 +8050,46 @@ snapshots:
       - supports-color
       - typescript
 
+  semantic-release@24.2.9(typescript@5.8.3):
+    dependencies:
+      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@24.2.9(typescript@5.8.3))
+      '@semantic-release/error': 4.0.0
+      '@semantic-release/github': 11.0.6(semantic-release@24.2.9(typescript@5.8.3))
+      '@semantic-release/npm': 12.0.2(semantic-release@24.2.9(typescript@5.8.3))
+      '@semantic-release/release-notes-generator': 14.1.0(semantic-release@24.2.9(typescript@5.8.3))
+      aggregate-error: 5.0.0
+      cosmiconfig: 9.0.0(typescript@5.8.3)
+      debug: 4.4.3
+      env-ci: 11.2.0
+      execa: 9.6.0
+      figures: 6.1.0
+      find-versions: 6.0.0
+      get-stream: 6.0.1
+      git-log-parser: 1.2.1
+      hook-std: 4.0.0
+      hosted-git-info: 8.1.0
+      import-from-esm: 2.0.0
+      lodash-es: 4.17.21
+      marked: 15.0.12
+      marked-terminal: 7.3.0(marked@15.0.12)
+      micromatch: 4.0.8
+      p-each-series: 3.0.0
+      p-reduce: 3.0.0
+      read-package-up: 11.0.0
+      resolve-from: 5.0.0
+      semver: 7.7.2
+      semver-diff: 5.0.0
+      signale: 1.4.0
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
   semver-diff@4.0.0:
+    dependencies:
+      semver: 7.7.2
+
+  semver-diff@5.0.0:
     dependencies:
       semver: 7.7.2
 
@@ -8265,17 +8389,12 @@ snapshots:
     dependencies:
       js-tokens: 9.0.1
 
-  styled-jsx@5.1.6(@babel/core@7.28.4)(react@19.1.0):
-    dependencies:
-      client-only: 0.0.1
-      react: 19.1.0
-    optionalDependencies:
-      '@babel/core': 7.28.4
-
-  styled-jsx@5.1.6(react@19.1.1):
+  styled-jsx@5.1.6(@babel/core@7.28.4)(react@19.1.1):
     dependencies:
       client-only: 0.0.1
       react: 19.1.1
+    optionalDependencies:
+      '@babel/core': 7.28.4
 
   super-regex@1.0.0:
     dependencies:
@@ -8559,11 +8678,11 @@ snapshots:
       '@types/node': 24.3.3
       fsevents: 2.3.3
 
-  vitest-browser-react@1.0.1(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(@vitest/browser@3.2.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vitest@3.2.4):
+  vitest-browser-react@1.0.1(@types/react-dom@19.1.9(@types/react@19.1.13))(@types/react@19.1.13)(@vitest/browser@3.2.4)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(vitest@3.2.4):
     dependencies:
       '@vitest/browser': 3.2.4(playwright@1.55.0)(vite@7.1.5(@types/node@24.3.3))(vitest@3.2.4)
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
       vitest: 3.2.4(@types/node@24.3.3)(@vitest/browser@3.2.4)
     optionalDependencies:
       '@types/react': 19.1.13
