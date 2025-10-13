@@ -15,7 +15,7 @@
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "next": "^15.5.3",
+    "next": "^15.5.5",
     "@daniel-rose/envex": "^1.2.0"
   },
   "devDependencies": {
