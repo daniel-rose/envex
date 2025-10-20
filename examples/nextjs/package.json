@@ -25,7 +25,7 @@
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "eslint": "^9",
-    "eslint-config-next": "^15.5.3",
+    "eslint-config-next": "^15.5.6",
     "playwright": "^1.55.0",
     "typescript": "^5"
   }
